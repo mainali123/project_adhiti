@@ -1,0 +1,365 @@
+/*
+Theme Name: Ebook - Bootstrap 5 Book Store HTML CSS Template
+Theme URI: https://templatejungle.com/
+Author: TemplatesJungle
+Author URI: https://templatejungle.com/
+Description: Ebook - Bootstrap 5 Book Store HTML CSS Template is specially designed product packaged for Book Stores by TemplatesJungle.
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+/*------------------------------------*\
+    Table of contents
+\*------------------------------------*/
+
+/*------------------------------------------------
+CSS STRUCTURE:
+
+1. VARIABLES
+2. GENERAL TYPOGRAPHY
+
+--------------------------------------------------------------*/
+body {
+  --heading-font: "Merriweather", Georgia, serif;
+  --heading-font-weight: 400;
+  --heading-color: #464646;
+  --heading-line-height: 1.24;
+
+  --swiper-theme-color: #8C907E;
+
+  /* bootstrap */
+  --bs-body-font-family: "Lato", Roboto, sans-serif;
+  --bs-body-font-size: 16px;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #6A6A6A;
+  --bs-body-color-rgb: 1.6, 1.6, 1.6;
+  --bs-body-bg-rgb: 246, 245, 243;
+  --bs-body-bg: #F6F5F3;
+
+  --bs-primary: #DD4F46;
+  --bs-secondary: #DED4D3;
+  --bs-black: #111;
+  --bs-white: #fff;
+  --bs-light: #f8f8f8;
+  --bs-dark: #212529;
+  --bs-gray: #9aa1a7;
+  --bs-gray-dark: #51565b;
+
+  --bs-primary-rgb: 221, 79, 70;
+  --bs-secondary-rgb: 239, 238, 235;
+  --bs-black-rgb: 17, 17, 17;
+  --bs-light-rgb: 241, 241, 240;
+  --bs-dark-rgb: 33, 37, 41;
+
+  --bs-link-color: #111;
+  --bs-link-color-rgb: 17, 17, 17;
+  --bs-link-decoration: underline;
+  --bs-link-hover-color: #111;
+  --bs-link-hover-color-rgb: 17, 17, 17;
+}
+
+body {
+  letter-spacing: 0.03rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+  color: var(--heading-color);
+  line-height: var(--heading-line-height);
+}
+
+h1.light,
+.h1,
+h2.light,
+.h2,
+h3.light,
+.h3,
+h4.light,
+.h4,
+h5.light,
+.h5,
+h6.light,
+.h6 {
+  color: var(--bs-light);
+}
+
+h1,
+h2,
+h3 {
+  margin: 25px 0;
+}
+
+h5,
+h6 {
+  letter-spacing: 1px;
+}
+
+h1,
+.h1 {
+  font-size: 4.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 3.6rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.8rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.8rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* container fluid */
+.container-fluid {
+  max-width: 1800px;
+}
+
+@media (min-width: 1600px) {
+.container, .container-lg {
+    max-width: 1420px;
+  }
+.container, .container-md {
+    max-width: 1200px;
+  }
+}
+
+/* list group */
+.list-group-item {
+  --bs-list-group-item-padding-x: 0;
+  --bs-list-group-border-width: 0;
+}
+
+/* btn */
+.btn {
+  --bs-btn-border-radius: 0;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--bs-light);
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--bs-light);
+  --bs-btn-hover-bg: var(--bs-dark);
+  --bs-btn-hover-border-color: var(--bs-dark);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--bs-light);
+  --bs-btn-active-bg: var(--bs-dark);
+  --bs-btn-active-border-color: var(--bs-dark);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--bs-light);
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-dark {
+  --bs-btn-bg: var(--bs-light);
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 2.8rem;
+  --bs-btn-font-size: 1.25rem;
+}
+
+.btn.btn-shadow {
+  box-shadow: 0px 6px 39px 0px rgba(91, 45, 42, 0.20);
+}
+
+/* text white */
+.text-white {
+  --heading-color: var(--bs-light);
+  --bs-breadcrumb-item-active-color: var(--bs-light);
+  --bs-breadcrumb-divider-color: var(--bs-light);
+  --bs-link-color-rgb: var(--bs-light-rgb);
+  --bs-link-hover-color-rgb: var(--bs-light-rgb);
+}
+
+.text-white .nav-link {
+  --bs-nav-link-color: var(--bs-light);
+  --bs-nav-link-hover-color: var(--bs-light);
+  --bs-nav-link-active-color: var(--bs-light);
+  --bs-navbar-active-color: var(--bs-light);
+}
+
+/* preloader */
+.preloader {
+  position: fixed;
+  z-index: 99;
+  background: var(--bs-dark);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.preloader.loaded {
+  height: 0;
+}
+
+/* navbar */
+.navbar.fixed-top {
+  transition: background-color 0.6s ease-out;
+}
+
+/* margin */
+.my-lg-6 {
+  margin-top: 4.5rem!important;
+  margin-bottom: 4.5rem!important;
+}
+.my-lg-7 {
+  margin-top: 6rem!important;
+  margin-bottom: 6rem!important;
+}
+.my-lg-8 {
+  margin-top: 8.5rem!important;
+  margin-bottom: 8rem!important;
+}
+.my-lg-9 {
+  margin-top: 10rem!important;
+  margin-bottom: 10rem!important;
+}
+.my-lg-10 {
+  margin-top: 12.5rem!important;
+  margin-bottom: 12.5rem!important;
+}
+
+/* padding */
+.py-lg-6 {
+  padding-top: 4.5rem!important;
+  padding-bottom: 4.5rem!important;
+}
+.py-lg-7 {
+  padding-top: 6rem!important;
+  padding-bottom: 6rem!important;
+}
+.py-lg-8 {
+  padding-top: 8.5rem!important;
+  padding-bottom: 8rem!important;
+}
+.py-lg-9 {
+  padding-top: 10rem!important;
+  padding-bottom: 10rem!important;
+}
+.py-lg-10 {
+  padding-top: 12.5rem!important;
+  padding-bottom: 12.5rem!important;
+}
+
+.bg-white-trans {
+  --bs-bg-opacity: 0.6;
+  background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important;
+}
+
+/* - Svg Color
+------------------------------------------------------------- */ 
+.svg-primary {
+  fill: var(--bs-primary);
+  color: var(--bs-primary);
+}
+.svg-green {
+  fill: var(--bs-teal);
+  color: var(--bs-teal);
+}
+.svg-yellow {
+  fill: var(--bs-yellow);
+  color: var(--bs-yellow);
+}
+
+/* - Billboard
+------------------------------------------------------------- */ 
+.banner-content h1>img {
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 65%;
+  height: auto;
+}
+
+/* - Reviewer (Intro)
+------------------------------------------------------------- */ 
+#intro .reviewer {
+  top: 650px;
+}
+
+/* - Short Overview
+------------------------------------------------------------- */ 
+#about-us .detail span {
+  width: 30px;
+  height: 30px;
+}
+
+/* - Video
+------------------------------------------------------------- */ 
+#video-player .play-btn {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* - Price
+------------------------------------------------------------- */
+#price .card .card-header {
+  transition: 0.8s ease-in-out;
+}
+
+/* - WayPoint
+------------------------------------------------------------- */ 
+ul.waypoints {
+  top: 400px;
+  right: 20px;
+  z-index: 9;
+}
+ul.waypoints li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background: var(--bs-primary);
+  border-radius: 50%;
+}
+ul.waypoints li a:hover,
+ul.waypoints li a.active {
+  background: var(--bs-dark);
+}
