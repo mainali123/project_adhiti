@@ -27,12 +27,12 @@
             <div class="form-holder">
                 <input type="password" placeholder="Password" class="form-control" style="font-size: 15px;">
             </div>
-            <!--<div class="checkbox">
+            <div class="checkbox">
                 <label>
-                    <input type="checkbox" checked> I agree all statement in <a href="#">Terms & Conditions</a>
+                    <input type="checkbox"> Remember Me
                     <span class="checkmark"></span>
                 </label>
-            </div>-->
+            </div>
             <div class="form-login">
                 <button>Login</button>
                 <p>Don't Have Account? <a href="sign-up.php">Sign up</a></p>

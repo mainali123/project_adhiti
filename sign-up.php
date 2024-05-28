@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>RegistrationForm_v4 by Colorlib</title>
+    <title>Signup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- STYLE CSS -->
@@ -42,7 +42,7 @@
 </div>
 
 <script src="js/jquery-3.7.1.min.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 </html>
 
 <script>
@@ -52,4 +52,6 @@
             $(this).parent().addClass("active");
         })
     })
+
+
 </script>
