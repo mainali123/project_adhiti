@@ -9,11 +9,28 @@
 </head>
 <body>
 
+<button id="login" class="login">Login</button>
+
+<div class="popupLogin" id="popupLogin">
+    <div class="popup-box-login">
+        <h2 style="color: #14f8f8;">Login</h2>
+        <form class="form-container">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-input" type="email" name="email" placeholder="abc@gmail.com" required>
+            <label class="form-label" for="password">Password:</label>
+            <input class="form-input" type="password" name="password" placeholder="Password" required>
+        </form>
+    </div>
+</div>
+
 <form action="index.php" method="post" enctype="multipart/form-data">
     Select image to upload:
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload File" name="submit">
 </form>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
